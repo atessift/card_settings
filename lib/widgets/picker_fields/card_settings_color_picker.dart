@@ -94,8 +94,10 @@ class _CardSettingsColorPickerState extends FormFieldState<Color> {
               contentPadding: const EdgeInsets.all(0.0),
               content: SingleChildScrollView(
                 child: ColorPicker(
-                  pickerColor: _pickerColor,
-                  onColorChanged: (color) => _pickerColor = color,
+                  _pickerColor,
+                  (color) {
+                    _pickerColor = color;
+                  },
                   colorPickerWidth: 1000.0,
                   pickerAreaHeightPercent: 0.7,
                   enableAlpha: true,
@@ -146,8 +148,10 @@ class _CardSettingsColorPickerState extends FormFieldState<Color> {
               contentPadding: const EdgeInsets.all(0.0),
               content: SingleChildScrollView(
                 child: ColorPicker(
-                  pickerColor: _pickerColor,
-                  onColorChanged: (color) => _pickerColor = color,
+                  _pickerColor,
+                  (color) {
+                    _pickerColor = color;
+                  },
                   colorPickerWidth: 1000.0,
                   pickerAreaHeightPercent: 0.7,
                   enableAlpha: true,
